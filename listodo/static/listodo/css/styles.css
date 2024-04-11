@@ -1,0 +1,102 @@
+body {
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.container {
+  background-color: #1f1f1f;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  color: #ff5722;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="date"] {
+  background-color: #343434;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  background-color: #ff5722;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+li {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+li.completed {
+  text-decoration: line-through;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  margin-top: 5px;
+}
+
+.complete-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 5px; /* Add a gap of 5 pixels between the buttons */
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  color: #808080;
+}
+
+.task-text.completed::before {
+  content: '\u2713';
+  margin-right: 5px;
+}
+
+.task-date {
+  color: #808080;
+}

@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo App</title>
+  <link rel="stylesheet" type="text/css" href='{% static "listodo/css/styles.css" %}'>
+</head>
+<body>
+  <div class="container">
+    <h1>Daily Tasks</h1>
+    <form id="taskForm">
+      <input type="text" id="taskInput" placeholder="Enter task">
+      <input type="date" id="dateInput">
+      <button type="submit">Add Task</button>
+    </form>
+    <div id="list"><ul id="taskList"></ul></div>
+  </div>
+
+  <script src='{% static "listodo/js/scripts.js" %}'></script>
+</body>
+</html>

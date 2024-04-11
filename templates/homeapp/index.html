@@ -1,0 +1,683 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Deepanshu's Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'homeapp/assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'homeapp/assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'homeapp/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'homeapp/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'homeapp/assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'homeapp/assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'homeapp/assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'homeapp/assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'homeapp/assets/css/style.css' %}" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://kit.fontawesome.com/ba5f6a3948.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <h1><a href="">Deepanshu</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      <h2>I'm a passionate <span id="typed-text"></span></h2>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="#header">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#resume">Resume</a></li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="social-links">
+        <a href="https://github.com/RyugaSunny" class="github"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/deepanshu981/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://wa.me/+919812699870" class="whatsapp"><i class="bx bxl-whatsapp"></i></a> 
+        <a href="https://www.instagram.com/sunny_sunny981/" class="instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+
+    <!-- ======= About Me ======= -->
+    <div class="about-me container">
+
+      <div class="section-title">
+        <h2>About</h2>
+        <p>Learn more about me</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 container" data-aos="fade-right">
+          <img src="{% static 'homeapp/assets/img/me.png' %}" class="img-fluid" id="me-img" alt="">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <p class="fst-italic">My name is Deepanshu, and I'm a dedicated software enthusiast currently pursuing a degree in Computer Science. Throughout my journey, I've invested countless hours in coding and program development. The website you are seeing right now, I've crafted it using Django as Back-End and it stands as a testament to my dedication and expertise in the field.</p>
+
+            <p class="fst-italic">While my journey began as a personal pursuit, I've honed my skills and cultivated a profound understanding of programming concepts and now I want to transition this passion into a thriving professional career as a software engineer.</p>
+            
+
+            <p class="fst-italic">What sets me apart is not just my technical proficiency, but also my eagerness to learn, grow, and thrive within a collaborative team environment. I am committed to making meaningful contributions and am excited about the prospect of leveraging my skills to drive innovation and success within your esteemed organization.</p>
+          <br>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>20 July 2003</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a href="{% url 'oldindex' %}">Previously build</a></span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span><a href=“tel:”+919812699870>+919812699870</a></span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span><a href="https://maps.app.goo.gl/dayJiVkiQ5vZrd3L9">Rohtak, Haryana</a></span></li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>20</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><a href = "mailto:sunnyraperia1@gmail.com?subject = Hello&body = Message">sunnyraperia1@gmail.com</a></span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Availablity to Work:</strong> <span>Available</span></li>
+              </ul>
+            </div>
+          </div>
+          <p>
+            “Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”
+          </p>
+        </div>
+      </div>
+
+    </div><!-- End About Me -->
+    
+    <!-- ======= Skills  ======= -->
+    <div class="skills container">
+
+      <div class="section-title">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="row skills-content">
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item"><i class="fab fa-python"></i></li>
+          <li class="list-inline-item"><i class="fas fa-database"></i></li>
+          <li class="list-inline-item"><i class="fab fa-github"></i></li>
+          <li class="list-inline-item"><i class="fab fa-c"></i></li>
+          <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
+          <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+          <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+          <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+          <li class="list-inline-item"><i class="fa-brands fa-bootstrap"></i>
+      </ul>
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">Python <i class="val">100%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">SQL <i class="val">80%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Github <i class="val">75%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">C Language <i class="val">75%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">WordPress/BootStrap <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">HTML <i class="val">85%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div><!-- End Skills -->
+
+    <!-- ======= Interests ======= -->
+    <div class="interests container">
+
+      <div class="section-title">
+        <h2>Interests</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <div class="icon-box">
+            <i class="ri-code-s-slash-line" style="color: #ffbb2c;"></i>
+            <h3>Coding</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-terminal-box-fill" style="color: #5578ff;"></i>
+            <h3>Linux</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-basketball-fill" style="color: #e80368;"></i>
+            <h3>Basketball</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+          <div class="icon-box">
+            <i class="ri-movie-2-line" style="color: #e361ff;"></i>
+            <h3>Horror Movies</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-treasure-map-line" style="color: #47aeff;"></i>
+            <h3>Exploring</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-file-music-line" style="color: #ffa76e;"></i>
+            <h3>Music</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-health-book-fill" style="color: #11dbcf;"></i>
+            <h3>Breaking Stuff</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-lightbulb-flash-line" style="color: #4233ff;"></i>
+            <h3>Fixing Stuff</h3>
+          </div>
+        </div>
+      
+      </div>
+
+    </div><!-- End Interests -->
+
+    <!-- ======= Testimonials ======= -->
+    <div class="testimonials container">
+
+      <div class="section-title">
+        <h2>Quotes</h2>
+      </div>
+      <p>Here are some inspirational Quotes that keep me going :</p>
+      <br>
+      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                I am enough of an artist to draw freely upon my imagination. Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="{% static 'homeapp/assets/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
+              <h3>Albert Einstein</h3>
+              <h4>Physicist</h4>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Embrace the challenges in coding, for they are the stepping stones to your innovation and growth.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="{% static 'homeapp/assets/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
+              <h3>Linus Torvalds</h3>
+              <h4>Software Engineer</h4>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                It always seems impossible until it's done.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="{% static 'homeapp/assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
+              <h3>Nelson Mandela</h3>
+              <h4>Activist</h4>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Knowledge is power.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="{% static 'homeapp/assets/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
+              <h3>Francis Bacon</h3>
+              <h4>English philosopher &amp; Statesman</h4>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                The bad news is time flies. The good news is you're the pilot.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="{% static 'homeapp/assets/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
+              <h3>Michael Altshuler</h3>
+              <h4>Entrepreneur</h4>
+            </div>
+          </div><!-- End testimonial item -->
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="owl-carousel testimonials-carousel">
+
+      </div>
+
+    </div><!-- End Testimonials  -->
+
+  </section><!-- End About Section -->
+
+  <!-- ======= Resume Section ======= -->
+  <section id="resume" class="resume">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Resume</h2>
+        <p>Check My Resume</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="resume-title">Summary</h3>
+          <div class="resume-item pb-0">
+            <h4>Deepanshu</h4>
+            <p><em>Innovative and deadline-driven programmer eager to learn new things and wanting to start working and horn my skills in a good  team environment.</em></p>
+            <p>
+            <ul>
+              <li>Bhaini Maharajpur, Tehsil Meham, District Rohtak, Haryana</li>
+              <li><a href=“tel:”+919812699870>+919812699870</a></li>
+              <li><a href = "mailto:sunnyraperia1@gmail.com?subject = Hello&body = Message">sunnyraperia1@gmail.com</a></li>
+            </ul>
+            </p>
+          </div>
+
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item">
+            <h4>Bachelor of Computer Applications</h4>
+              <h5>August 2021 - September 2024</h5>
+              <h6>Currently persuing</h6>
+              <p><em>Chandigarh University, Mohali, Punjab, India.</em></p>
+              <p>“Knowledge is power” <br>
+                – Francis Bacon
+              </p>
+            </div>
+            <div class="resume-item">
+              <h4>12TH STANDARD (C.B.S.E.)</h4>
+              <h5>Jan 2020 - July 2021</h5>
+              <p><em>R.K.P. SR. SEC. SCKOOL, MADINA, ROHTAK (HARYANA)</em></p>
+              <p>“Before software can be reusable it first has to be usable.” <br>
+                – Ralph Johnson
+              </p>
+            </div>
+            <div class="resume-item">
+              <h4>10TH STANDARD (C.B.S.E.)</h4>
+              <h5>Jan 2018 - July 2019</h5>
+              <p><em>R.K.P. SR. SEC. SCKOOL, MADINA, ROHTAK (HARYANA)</em></p>
+              <p>“Rule your mind or it will rule you.” <br>
+                – Buddha
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Personal Experience</h3>
+            <div class="resume-item">
+              <h4>This Website</h4>
+              <h5>April 2024</h5>
+              <p><em>Personal Project</em></p>
+              <ul>
+                <li>You can find photos of websites <a href="#portfolio">here</a>.</li>
+                <li>This is the django website you are currently looking at.</li>
+                <li>There was an older version which was not as good looking, you can find it <a href="https://github.com/RyugaSunny/portfolio">here</a>.</li>
+                <li>I made this after I became confident in my skills in Django.</li>
+                <li>It have 3 Django apps in a single project with many static files</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Todo List</h4>
+              <h5>March 2024</h5>
+              <p><em>Personal Project</em></p>
+              <ul>
+                <li>I don't remember where but i made it for some contest or task.</li>
+                <li>You can find it <a href="{% url 'todohome'%}">here</a>.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Django</h4>
+              <h5>Sept 2023</h5>
+              <p><em>Personal Project</em></p>
+              <ul>
+                <li>This is the website I made while I was learning Django, you can find it <br><a href="{% url 'oldindex'%}">here</a></li>
+                <li>Getting started with django I wanted it to be easy so i went for this simple Template</li>
+                <li>It contains Just 1 HTML 1 CSS and 1 JavaScript file to keep it simple</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Resume Section -->
+
+
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Photo Gallery</h2>
+        <p>My Works</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-card">Me</li>
+            <li data-filter=".filter-web">Web</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>App</p>
+              <div class="portfolio-links">
+                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="{% static 'homeapp/portfolio-details.html' %}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-2.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <div class="portfolio-links">
+                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="{% static 'homeapp/portfolio-details.html' %}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-3.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <div class="portfolio-links">
+                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="{% static 'homeapp/portfolio-details.html' %}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <div class="portfolio-links">
+                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="{% static 'homeapp/portfolio-details.html' %}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-5.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <div class="portfolio-links">
+                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="{% static 'homeapp/portfolio-details.html' %}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-6.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <div class="portfolio-links">
+                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-6.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="{% static 'homeapp/portfolio-details.html' %}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-7.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <div class="portfolio-links">
+                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="{% static 'homeapp/portfolio-details.html' %}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-8.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <div class="portfolio-links">
+                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="{% static 'homeapp/portfolio-details.html' %}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-9.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <div class="portfolio-links">
+                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="{% static 'homeapp/portfolio-details.html' %}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Portfolio Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Contact Me</p>
+      </div>
+
+      <div class="row mt-2">
+
+        <div class="col-md-6 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-map"></i>
+            <h3>My Address</h3>
+            <p>Bhaini Maharajpur, Tehsil Meham, District Rohtak, Haryana</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-share-alt"></i>
+            <h3>Social Profiles</h3>
+            <div class="social-links">
+              <a href="https://github.com/RyugaSunny" class="github"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/deepanshu981/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="https://wa.me/+919812699870" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+              <a href="https://www.instagram.com/sunny_sunny981/" class="instagram"><i class="bi bi-instagram"></i></a>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-envelope"></i>
+            <h3>Email Me</h3>
+            <p><a href = "mailto:sunnyraperia1@gmail.com?subject = Hello&body = Message">sunnyraperia1@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-phone-call"></i>
+            <h3>Call Me</h3>
+            <p><a href=“tel:”+919812699870>+919812699870</a></p>
+          </div>
+        </div>
+      </div>
+
+      <form method="post" role="form" action="/send_email/" class="php-email-form mt-4">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+        </div>
+        <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group mt-3">
+            <textarea class="form-control" name="message" id="message" placeholder="Message" required></textarea>
+        </div>
+        <div id="success-message" class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
+        <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+        </div>
+        <div class="text-center"><button type="submit">Send Message</button></div>
+    </form>
+    
+
+    
+
+    </div>
+  </section><!-- End Contact Section -->
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'homeapp/assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'homeapp/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'homeapp/assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'homeapp/assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'homeapp/assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'homeapp/assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'homeapp/assets/js/main.js' %}"></script><script>
+    var typed = new Typed('#typed-text', {
+        strings: ['Back-End Developer', 'Software Developer', 'Student', 'Pythonista'],
+        typeSpeed: 50,
+        backSpeed: 30, // speed of backspacing
+        backDelay: 500, // delay before starting to backspace
+        loop: true
+    });
+</script>
+</body>
+
+</html>
