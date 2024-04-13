@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Deepanshu's Portfolio</title>
+  <title>Deepanshu's Resume</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -441,7 +441,7 @@
         <div class="col-lg-12 d-flex justify-content-center">
           <ul id="portfolio-flters">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-app">Builds</li>
             <li data-filter=".filter-card">Me</li>
             <li data-filter=".filter-web">Web</li>
           </ul>
@@ -452,27 +452,29 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt="">
+            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-1.png' %}" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
+              <h4>My Previous Django <br> website without <br> working SMTP</h4>
+              <p>Builds</p>
               <div class="portfolio-links">
-                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="{% static 'homeapp/portfolio-details.html' %}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="{% static 'home/img/portfolio/portfolio-1.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'oldindex' %}" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- RYUGA -->
+
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
-            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-2.jpg' %}" class="img-fluid" alt="">
+            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-2.png' %}" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Web 3</h4>
+              <h4></h4>
               <p>Web</p>
               <div class="portfolio-links">
-                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="{% static 'homeapp/portfolio-details.html' %}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-2.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Previous Website"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/RyugaSunny/portfolio" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -480,13 +482,13 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-3.jpg' %}" class="img-fluid" alt="">
+            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-3.png' %}" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
+              <h4>Todo List</h4>
+              <p>Builds</p>
               <div class="portfolio-links">
-                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="{% static 'homeapp/portfolio-details.html' %}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-3.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Todo list"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'todohome' %}" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -494,13 +496,13 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
-            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-4.png' %}" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
+              <h4>My Github</h4>
+              <p>Me</p>
               <div class="portfolio-links">
-                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="{% static 'homeapp/portfolio-details.html' %}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-4.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="My Github"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/RyugaSunny" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -508,13 +510,13 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
-            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-5.jpg' %}" class="img-fluid" alt="">
+            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-5.png' %}" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Web 2</h4>
+              <h4></h4>
               <p>Web</p>
               <div class="portfolio-links">
-                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="{% static 'homeapp/portfolio-details.html' %}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-5.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="More Details"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'oldindex' %}" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -522,13 +524,13 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-6.jpg' %}" class="img-fluid" alt="">
+            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-6.png' %}" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
+              <h4>My First Website</h4>
+              <p>Builds</p>
               <div class="portfolio-links">
-                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-6.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="{% static 'homeapp/portfolio-details.html' %}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-6.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="My First Website"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'oldindex' %}" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -536,13 +538,13 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
-            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-7.jpg' %}" class="img-fluid" alt="">
+            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-7.png' %}" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
+              <h4>My Instagram</h4>
+              <p>Me</p>
               <div class="portfolio-links">
-                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="{% static 'homeapp/portfolio-details.html' %}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-7.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="My Instagram"><i class="bx bx-plus"></i></a>
+                <a href="https://www.instagram.com/sunny_sunny981/" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -550,13 +552,13 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
-            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-8.jpg' %}" class="img-fluid" alt="">
+            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-8.png' %}" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
+              <h4>My Linked In</h4>
+              <p>ME</p>
               <div class="portfolio-links">
-                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="{% static 'homeapp/portfolio-details.html' %}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-8.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Me"><i class="bx bx-plus"></i></a>
+                <a href="https://www.linkedin.com/in/deepanshu981/" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -564,13 +566,13 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
-            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-9.jpg' %}" class="img-fluid" alt="">
+            <img src="{% static 'homeapp/assets/img/portfolio/portfolio-9.png' %}" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Web 3</h4>
+              <h4></h4>
               <p>Web</p>
               <div class="portfolio-links">
-                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="{% static 'homeapp/portfolio-details.html' %}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="{% static 'homeapp/assets/img/portfolio/portfolio-9.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web"><i class="bx bx-plus"></i></a>
+                <a href="{% url 'todohome' %}" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
