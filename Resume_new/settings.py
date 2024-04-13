@@ -121,7 +121,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'           # url at which we can get static files
 # STATIC_DIRS =''                # Here we mention additional place to search for static files 
-# STATIC_ROOT = '/static/'       # Here are the stataic files stored after python manage.py collect static command
+STATIC_ROOT = '/static/'       # Here are the stataic files stored after python manage.py collect static command
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
