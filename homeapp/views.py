@@ -34,3 +34,7 @@ def send_email(request):
             )
             return render(request, r'homeapp/index.html', {'sent_message': True})
     return render(request, 'homeapp/index.html', {'sent_message': False})
+
+
+def portfolio(r):
+    return render(r,r'portfolio/index.html')

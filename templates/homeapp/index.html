@@ -396,7 +396,7 @@
               <ul>
                 <li>You can find photos of websites <a href="#portfolio">here</a>.</li>
                 <li>This is the django website you are currently looking at.</li>
-                <li>There was an older version which was not as good looking, you can find it <a href="https://github.com/RyugaSunny/portfolio">here</a>.</li>
+                <li>There was an older version which was not as good looking, you can find it <a href="{% url 'portfolio' %}">here</a>.</li>
                 <li>I made this after I became confident in my skills in Django.</li>
                 <li>It have 3 Django apps in a single project with many static files</li>
               </ul>
@@ -458,7 +458,7 @@
               <p>Builds</p>
               <div class="portfolio-links">
                 <a href="{% static 'home/img/portfolio/portfolio-1.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="{% url 'oldindex' %}" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="{% url 'portfolio' %}" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -474,7 +474,7 @@
               <p>Web</p>
               <div class="portfolio-links">
                 <a href="{% static 'homeapp/assets/img/portfolio/portfolio-2.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Previous Website"><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/RyugaSunny/portfolio" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="{% url 'portfolio' %}" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
