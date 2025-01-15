@@ -480,41 +480,6 @@ img#me-img{
   font-size: 14px;
 }
 
-/*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
-}
-
-.skills .progress .skill {
-  padding: 10px 0;
-  margin: 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #fff;
-}
-
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #18d26e;
-}
 
 /*--------------------------------------------------------------
 # Interests
@@ -545,6 +510,52 @@ img#me-img{
 .interests .icon-box:hover {
   background: rgba(255, 255, 255, 0.12);
 }
+
+
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+.skills .box {
+  padding: 40px;
+  margin: 40px;
+  border-radius: 15px;
+  border: 2px solid var(--shadow-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skills-item {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 10px var(--shadow-color) inset;
+  font-size: small;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skills-item h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  color: #fff;
+}
+
+.skills-item img {
+  width: 100px;
+}
+
 
 /*--------------------------------------------------------------
 # Testimonials
