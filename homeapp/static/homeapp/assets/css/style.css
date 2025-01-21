@@ -515,6 +515,12 @@ img#me-img{
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
+.skills .container {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 30px;
+}
+
+
 .skills .box {
   padding: 40px;
   margin: 40px;
@@ -641,6 +647,9 @@ img#me-img{
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+
+
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -1080,9 +1089,24 @@ img#me-img{
   0% {
     transform: rotate(0deg);
   }
-
+  
   100% {
     transform: rotate(360deg);
   }
 }
 
+
+:root {
+  --primary-color: #4dffb5;
+  --secondary-color: #999;
+  --shadow-color: #4dffb56d;
+  --bg-color: #121212;
+  --font-color: #ededed;
+}
+
+::-webkit-scrollbar {
+  background-color: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--shadow-color);
+}
