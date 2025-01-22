@@ -186,8 +186,10 @@ const scrollto = (el) => {
    * Porfolio isotope and filter
    */
   window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
+  let portfolioContainer = select('.portfolio-container');
+  if (portfolioContainer) {
+    // Ensure Isotope waits for all images to load
+    imagesLoaded(portfolioContainer, () => {
       let portfolioIsotope = new Isotope(portfolioContainer, {
         itemSelector: '.portfolio-item',
         layoutMode: 'fitRows'
@@ -195,9 +197,10 @@ const scrollto = (el) => {
 
       let portfolioFilters = select('#portfolio-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      // Filter functionality
+      on('click', '#portfolio-flters li', function (e) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
+        portfolioFilters.forEach((el) => {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
@@ -206,9 +209,10 @@ const scrollto = (el) => {
           filter: this.getAttribute('data-filter')
         });
       }, true);
-    }
+    });
+  }
+});
 
-  });
 
   /**
    * Initiate portfolio lightbox 
