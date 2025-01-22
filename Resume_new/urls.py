@@ -20,5 +20,4 @@ urlpatterns = [
     path('', include('homeapp.urls')),
     path('', include("oldwebsite.urls")),
     path('', include("listodo.urls")),
-    path('', include("portfolio.urls")),
 ]
